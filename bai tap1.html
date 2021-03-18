@@ -5,10 +5,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <script src="bai tap 1 .js"></script>
     </head>
     square of
-    <input type="text" id="input" oninput="calculate()" />is<span id="result">
-    </span>
-    <body></body>
+    <input type="text" id="input" oninput="calculate()" />is
+
+    <span id="result"> </span>
+    <body>
+        <script>
+            function square(number) {
+                let result = 0.305 * number;
+                return result;
+            }
+
+            function calculate() {
+                let input = document.getElementById("input").value;
+
+                let result = square(input);
+                document.getElementById("result").innerHTML = result;
+            }
+        </script>
+    </body>
 </html>

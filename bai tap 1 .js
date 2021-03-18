@@ -9,3 +9,4 @@ function calculate() {
     let result = square(input);
     document.getElementById("result").innerHTML = result;
 }
+
